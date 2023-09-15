@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-counter',
+  template: `
+  <p>counter :{{counter}}</p>
+<button (click)="increiseby(1)">+1</button>
+<button (click)="deincreiseby(1)">-1</button>
+<button (click)="reset()">reset</button>
+  `,
+
 })
-export class AppComponent {
-  title = 'bases_2';
-  public title_3:string ="gooo"
+export class CounterComponent {
   public counter:number=10;
 
   increiseby(value:number):void{

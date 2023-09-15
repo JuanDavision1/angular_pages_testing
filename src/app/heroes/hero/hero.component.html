@@ -1,0 +1,13 @@
+<p>hero works!</p>
+<h1>{{name}}</h1>
+<ul>
+    <li>Nombre:{{name}}</li>
+    <li>Edad:{{age}}</li>
+    <li>Metodo:nombre</li>
+    <li>Algun metodo:{{getheroinfo()}}</li>
+    <li>Capitalizado:{{capitalizarname}}</li>
+
+</ul>
+<button *ngIf="age == 22" 
+class="btn btn-primary" (click)="changename()">Cambio nombre</button>
+<button class="btn btn-primary" (click)="changeage()">Cambio Edad</button>

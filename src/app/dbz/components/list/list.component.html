@@ -1,0 +1,10 @@
+<h4>Listado</h4>
+<ul>
+    <li  [ngClass]="{'list-group-item-success':isfirts}"   *ngFor="let item of chareacterlist; let i = index; let isfirts=first">
+        <span class="text_primary">{{i+1}}.</span>
+        {{item.name}}-{{item.power}}
+    <span>es el primero:{{isfirts}}</span>
+    
+    </li>
+
+</ul>
